@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="de">
 <head>
@@ -6,133 +7,339 @@
   <meta name="theme-color" content="#090812">
   <meta name="description" content="GeorgLabs AutoClicker – ein übersichtlicher Windows-AutoClicker mit Config Editor und Stream-Deck-Hotkeys.">
   <title>AutoClicker — GeorgLabs</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="ambient ambient-one"></div>
   <div class="ambient ambient-two"></div>
+
   <header class="topbar">
     <a class="brand" href="#" aria-label="GeorgLabs Startseite">
       <span class="brand-mark">G<span>.</span></span>
       <span>Georg<span class="muted">Labs</span></span>
-      <span class="product-tag">AUTCLICKER</span>
+      <span class="product-tag">AUTOCLICKER</span>
     </a>
+
     <nav>
       <a href="#features">Features</a>
       <a href="#controls">Steuerung</a>
       <a href="#faq">FAQ</a>
       <a class="nav-cta" href="#download">Download <span>↗</span></a>
     </nav>
+
     <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="pulse"></span> GEORGLABS SOFTWARE</div>
+        <div class="eyebrow">
+          <span class="pulse"></span>
+          GEORGLABS SOFTWARE
+        </div>
+
         <h1>Klicken.<br><span>Automatisieren.</span></h1>
+
         <p class="hero-lead">Deine Klicks. Deine Einstellungen. Deine Kontrolle.</p>
-        <p class="hero-text">Ein kompakter AutoClicker für Windows – mit übersichtlicher Oberfläche, separatem Config Editor und Hotkey-Steuerung.</p>
+
+        <p class="hero-text">
+          Ein kompakter AutoClicker für Windows – mit übersichtlicher Oberfläche,
+          separatem Config Editor und Hotkey-Steuerung.
+        </p>
+
         <div class="hero-actions">
-          <a class="button primary" href="#download">AutoClicker entdecken <span>↓</span></a>
+          <a class="button primary" href="#download">
+            AutoClicker herunterladen <span>↓</span>
+          </a>
           <a class="button secondary" href="#features">Features ansehen</a>
         </div>
-        <div class="hero-meta"><span class="status-dot"></span> Für Windows · Python / PyQt6</div>
+
+        <div class="hero-meta">
+          <span class="status-dot"></span>
+          Für Windows · Python / PyQt6
+        </div>
       </div>
 
-      <div class="app-preview" aria-label="Dekorative Vorschau der AutoClicker-Oberfläche">
+      <div class="app-preview" aria-label="Vorschau der AutoClicker-Oberfläche">
         <div class="window-bar">
           <div class="window-dots"><i></i><i></i><i></i></div>
           <span>GEORGLABS / AUTOCLICKER</span>
           <span class="window-version">APP PREVIEW</span>
         </div>
+
         <div class="preview-content">
-          <div class="preview-heading"><div><small>GEORGLABS TOOL</small><h2>AutoClicker<span>.</span></h2></div><div class="gear">⚙</div></div>
-          <div class="preview-grid">
-            <div class="setting"><label>DELAY</label><strong>5.0 <small>sec</small></strong><div class="fake-slider"><b style="width:42%"></b></div></div>
-            <div class="setting"><label>CLICKS</label><strong>64</strong><div class="fake-slider"><b style="width:64%"></b></div></div>
-            <div class="setting"><label>INTERVAL</label><strong>0.7 <small>sec</small></strong><div class="fake-slider"><b style="width:28%"></b></div></div>
-            <div class="setting"><label>MOUSE BUTTON</label><strong class="choice">LEFT <span>⌄</span></strong></div>
+          <div class="preview-heading">
+            <div>
+              <small>GEORGLABS TOOL</small>
+              <h2>AutoClicker<span>.</span></h2>
+            </div>
+            <div class="gear">⚙</div>
           </div>
-          <div class="preview-state"><span class="state-light"></span><span>READY TO CLICK</span><span class="state-line"></span><small>STANDBY</small></div>
-          <div class="preview-buttons"><div class="fake-button">▶ &nbsp; START</div><div class="fake-button stop">■ &nbsp; STOP</div></div>
-          <div class="preview-footer"><span>CONFIG: LOADED</span><span>GEORGLABS</span></div>
+
+          <div class="preview-grid">
+            <div class="setting">
+              <label>DELAY</label>
+              <strong>5.0 <small>sec</small></strong>
+              <div class="fake-slider"><b style="width:42%"></b></div>
+            </div>
+
+            <div class="setting">
+              <label>CLICKS</label>
+              <strong>64</strong>
+              <div class="fake-slider"><b style="width:64%"></b></div>
+            </div>
+
+            <div class="setting">
+              <label>INTERVAL</label>
+              <strong>0.7 <small>sec</small></strong>
+              <div class="fake-slider"><b style="width:28%"></b></div>
+            </div>
+
+            <div class="setting">
+              <label>MOUSE BUTTON</label>
+              <strong class="choice">LEFT <span>⌄</span></strong>
+            </div>
+          </div>
+
+          <div class="preview-state">
+            <span class="state-light"></span>
+            <span>READY TO CLICK</span>
+            <span class="state-line"></span>
+            <small>STANDBY</small>
+          </div>
+
+          <div class="preview-buttons">
+            <div class="fake-button">▶ &nbsp; START</div>
+            <div class="fake-button stop">■ &nbsp; STOP</div>
+          </div>
+
+          <div class="preview-footer">
+            <span>CONFIG: LOADED</span>
+            <span>GEORGLABS</span>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- TICKER -->
     <section class="ticker" aria-label="Produktmerkmale">
-      <span>PYQT6 INTERFACE</span><b>✳</b><span>CONFIG.INI</span><b>✳</b><span>STREAM DECK READY</span><b>✳</b><span>WINDOWS</span>
+      <span>PYQT6 INTERFACE</span>
+      <b>✳</b>
+      <span>CONFIG.INI</span>
+      <b>✳</b>
+      <span>STREAM DECK READY</span>
+      <b>✳</b>
+      <span>WINDOWS</span>
     </section>
 
+    <!-- FEATURES -->
     <section class="section" id="features">
       <div class="section-kicker">01 / FEATURES</div>
-      <div class="section-head"><h2>Weniger Routine.<br><span>Mehr Kontrolle.</span></h2><p>Die wichtigsten Einstellungen direkt im Blick – ohne unnötig komplizierte Menüs.</p></div>
+
+      <div class="section-head">
+        <h2>Weniger Routine.<br><span>Mehr Kontrolle.</span></h2>
+        <p>Die wichtigsten Einstellungen direkt im Blick – ohne unnötig komplizierte Menüs.</p>
+      </div>
+
       <div class="feature-grid">
         <article class="feature-card large">
-          <div class="feature-icon">⌁</div><div class="card-index">FEATURE / 01</div>
+          <div class="feature-icon">⌁</div>
+          <div class="card-index">FEATURE / 01</div>
           <h3>Deine Klick-Einstellungen</h3>
-          <p>Lege Verzögerung, Klickanzahl, Intervall und Maustaste fest. Passe das Verhalten an deinen Anwendungsfall an.</p>
-          <div class="mini-pills"><span>Delay</span><span>Clicks</span><span>Interval</span><span>Mouse button</span></div>
+          <p>
+            Lege Verzögerung, Klickanzahl, Intervall und Maustaste fest.
+            Passe das Verhalten an deinen Anwendungsfall an.
+          </p>
+          <div class="mini-pills">
+            <span>Delay</span>
+            <span>Clicks</span>
+            <span>Interval</span>
+            <span>Mouse button</span>
+          </div>
         </article>
+
         <article class="feature-card">
-          <div class="feature-icon">⚙</div><div class="card-index">FEATURE / 02</div>
+          <div class="feature-icon">⚙</div>
+          <div class="card-index">FEATURE / 02</div>
           <h3>Separater Config Editor</h3>
-          <p>Verwalte deine Standardwerte über eine eigene Oberfläche und speichere sie in der config.ini.</p>
+          <p>
+            Verwalte deine Standardwerte über eine eigene Oberfläche
+            und speichere sie in der config.ini.
+          </p>
           <div class="code-chip">config.ini <span>↗</span></div>
         </article>
+
         <article class="feature-card">
-          <div class="feature-icon">▦</div><div class="card-index">FEATURE / 03</div>
+          <div class="feature-icon">▦</div>
+          <div class="card-index">FEATURE / 03</div>
           <h3>Stream Deck Hotkeys</h3>
-          <p>Starte, stoppe oder setze den AutoClicker per Tastenkombination zurück – auch über entsprechend belegte Stream-Deck-Tasten.</p>
-          <div class="hotkeys"><kbd>CTRL</kbd><kbd>ALT</kbd><kbd>S</kbd><span>Start</span></div>
+          <p>
+            Starte, stoppe oder setze den AutoClicker per Tastenkombination
+            zurück – auch über entsprechend belegte Stream-Deck-Tasten.
+          </p>
+          <div class="hotkeys">
+            <kbd>CTRL</kbd>
+            <kbd>ALT</kbd>
+            <kbd>S</kbd>
+            <span>Start</span>
+          </div>
         </article>
       </div>
     </section>
 
+    <!-- CONTROLS -->
     <section class="controls-section" id="controls">
       <div class="section-kicker">02 / QUICK CONTROL</div>
+
       <div class="controls-layout">
-        <div><h2>Steuerung,<br><span>wie du sie brauchst.</span></h2><p>Die Tastenkombinationen kannst du beispielsweise in der Elgato-Stream-Deck-Software als Tastaturaktionen hinterlegen.</p></div>
+        <div>
+          <h2>Steuerung,<br><span>wie du sie brauchst.</span></h2>
+          <p>
+            Die Tastenkombinationen kannst du beispielsweise in der
+            Elgato-Stream-Deck-Software als Tastaturaktionen hinterlegen.
+          </p>
+        </div>
+
         <div class="shortcut-list">
-          <div class="shortcut-row"><div class="key-group"><kbd>CTRL</kbd><kbd>ALT</kbd><kbd>S</kbd></div><span>AutoClicker starten</span><b class="shortcut-play">▶</b></div>
-          <div class="shortcut-row"><div class="key-group"><kbd>CTRL</kbd><kbd>ALT</kbd><kbd>X</kbd></div><span>AutoClicker stoppen</span><b class="shortcut-stop">■</b></div>
-          <div class="shortcut-row"><div class="key-group"><kbd>CTRL</kbd><kbd>ALT</kbd><kbd>R</kbd></div><span>Zurücksetzen</span><b class="shortcut-reset">↺</b></div>
+          <div class="shortcut-row">
+            <div class="key-group">
+              <kbd>CTRL</kbd>
+              <kbd>ALT</kbd>
+              <kbd>S</kbd>
+            </div>
+            <span>AutoClicker starten</span>
+            <b class="shortcut-play">▶</b>
+          </div>
+
+          <div class="shortcut-row">
+            <div class="key-group">
+              <kbd>CTRL</kbd>
+              <kbd>ALT</kbd>
+              <kbd>X</kbd>
+            </div>
+            <span>AutoClicker stoppen</span>
+            <b class="shortcut-stop">■</b>
+          </div>
+
+          <div class="shortcut-row">
+            <div class="key-group">
+              <kbd>CTRL</kbd>
+              <kbd>ALT</kbd>
+              <kbd>R</kbd>
+            </div>
+            <span>Zurücksetzen</span>
+            <b class="shortcut-reset">↺</b>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- DOWNLOAD -->
     <section class="download-section" id="download">
       <div class="download-card">
         <div class="download-orb">G<span>.</span></div>
+
         <div class="section-kicker">03 / GET THE APP</div>
+
         <h2>Bereit für<br><span>deinen Workflow?</span></h2>
-        <p>Hier downloaden. Download nur für Windows.</p>
-        <a class="button primary disabled" href="#" aria-disabled="true" tabindex="-1">Download folgt <span>↗</span></a>
-        <small class="download-note">Windows · Installer/ZIP noch nicht veröffentlicht</small>
+
+        <p>Hol dir GeorgLabs AutoClicker direkt auf deinen Windows-PC.</p>
+
+        <a
+          class="button primary"
+          href="https://sunny-kashata-cf4521.netlify.app/GeorgLabs_AutoClicker-installer.exe"
+          download="GeorgLabs_AutoClicker-installer.exe"
+        >
+          Installer herunterladen <span>↓</span>
+        </a>
+
+        <small class="download-note">
+          Windows · Installer · EXE
+        </small>
       </div>
     </section>
 
+    <!-- FAQ -->
     <section class="section faq-section" id="faq">
       <div class="section-kicker">04 / FAQ</div>
-      <div class="section-head"><h2>Häufige <span>Fragen.</span></h2></div>
+
+      <div class="section-head">
+        <h2>Häufige <span>Fragen.</span></h2>
+      </div>
+
       <div class="faq-list">
-        <details><summary>Ist der AutoClicker kostenlos?</summary><p>Ja, der AutoClicker ist kostenlos.</p></details>
-        <details><summary>Wo werden meine Einstellungen gespeichert?</summary><p>Die Anwendung verwendet eine config.ini-Datei im Programmordner, um Einstellungen zu laden und zu speichern.</p></details>
-        <details><summary>Wie nutze ich die Stream-Deck-Steuerung?</summary><p>Lege in der Stream-Deck-Software eine Tastaturaktion mit der gewünschten Kombination an, zum Beispiel Ctrl + Alt + S zum Starten.</p></details>
-        <details><summary>Warum ist der Download noch nicht verfügbar?</summary><p>Der Download-Button wird aktiviert, sobald das fertige Release-Paket auf dem Webserver liegt.</p></details>
+        <details>
+          <summary>Ist der AutoClicker kostenlos?</summary>
+          <p>Ja, der AutoClicker ist kostenlos.</p>
+        </details>
+
+        <details>
+          <summary>Wo werden meine Einstellungen gespeichert?</summary>
+          <p>
+            Die Anwendung verwendet eine config.ini-Datei im Programmordner,
+            um Einstellungen zu laden und zu speichern.
+          </p>
+        </details>
+
+        <details>
+          <summary>Wie nutze ich die Stream-Deck-Steuerung?</summary>
+          <p>
+            Lege in der Stream-Deck-Software eine Tastaturaktion mit der
+            gewünschten Kombination an, zum Beispiel Ctrl + Alt + S zum Starten.
+          </p>
+        </details>
+
+        <details>
+          <summary>Wie lade ich den AutoClicker herunter?</summary>
+          <p>
+            Klicke auf den Download-Button. Der Windows-Installer wird
+            direkt von unserem Netlify-Server geladen.
+          </p>
+        </details>
+
+        <details>
+          <summary>Für welches Betriebssystem ist der AutoClicker?</summary>
+          <p>Der Installer ist für Windows vorgesehen.</p>
+        </details>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <a class="brand footer-brand" href="#"><span class="brand-mark">G<span>.</span></span><span>Georg<span class="muted">Labs</span></span></a>
+    <a class="brand footer-brand" href="#">
+      <span class="brand-mark">G<span>.</span></span>
+      <span>Georg<span class="muted">Labs</span></span>
+    </a>
+
     <span>Ein Tool aus dem GeorgLabs-Projekt.</span>
-    <span class="copyright">© <span id="year"></span> GEORGLABS</span>
+
+    <span class="copyright">
+      © <span id="year"></span> GEORGLABS
+    </span>
   </footer>
+
   <script src="script.js"></script>
+
+  <script>
+    // Aktuelles Jahr automatisch einsetzen
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Download-Button
+    document.querySelectorAll('a[download]').forEach(button => {
+      button.addEventListener('click', () => {
+        button.style.opacity = "0.7";
+        setTimeout(() => {
+          button.style.opacity = "";
+        }, 500);
+      });
+    });
+  </script>
 </body>
 </html>
